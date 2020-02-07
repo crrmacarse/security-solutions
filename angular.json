@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "security-solutions": {
@@ -24,7 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/scss/index.scss"
             ],
             "scripts": []
           },
@@ -88,7 +88,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/scss/index.scss"
             ],
             "scripts": []
           }
@@ -119,6 +119,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "security-solutions"
+    }
+  },
+  "defaultProject": "security-solutions",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
