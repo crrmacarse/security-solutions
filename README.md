@@ -1,5 +1,8 @@
 # Security Solutions
 
+![CI](https://github.com/crrmacarse/security-solutions/workflows/CI/badge.svg?branch=source)
+![Release](https://github.com/crrmacarse/security-solutions/workflows/Release/badge.svg?branch=source)
+
 ## Project Details
 
 ### Overview
