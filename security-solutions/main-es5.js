@@ -1695,7 +1695,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! /home/runner/work/security-solutions/security-solutions/src/main.ts */
+    /*! D:\01 Projects\security-solutions\src\main.ts */
     "./src/main.ts");
     /***/
   }

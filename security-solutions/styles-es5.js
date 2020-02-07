@@ -353,7 +353,7 @@
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! /home/runner/work/security-solutions/security-solutions/src/scss/index.scss */
+    /*! D:\01 Projects\security-solutions\src\scss\index.scss */
     "./src/scss/index.scss");
     /***/
   }
