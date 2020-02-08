@@ -1,42 +1,52 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './public/home/home.component';
-import { LoginComponent as ClientLoginComponent } from './client/auth/login/login.component';
-import { RegisterComponent as ClientRegisterComponent } from './client/auth/register/register.component';
-import { DashboardComponent as AdminDashboardComponent } from './admin/dashboard/dashboard.component';
-import { LoginComponent as AdminLoginComponent } from './admin/auth/login/login.component';
-import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
-import { AboutComponent } from './public/about/about.component';
-import { ContactComponent } from './public/contact/contact.component';
-
-const appRoutes: Routes = [
-  { path: 'register', component: ClientLoginComponent },
-  { path: 'login', component: ClientRegisterComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'admin', component: AdminDashboardComponent },
-  { path: 'admin/login', component: AdminLoginComponent },
-  { path: '', component: HomeComponent },
-  { path: '**', component: PageNotFoundComponent }
-];
+import { HomeComponent } from './components/public/home/home.component';
+import { LoginComponent as ClientLoginComponent } from './components/client/auth/login/login.component';
+import { RegisterComponent as ClientRegisterComponent } from './components/client/auth/register/register.component';
+import { DashboardComponent as AdminDashboardComponent } from './components/admin/dashboard/dashboard.component';
+import { LoginComponent as AdminLoginComponent } from './components/admin/auth/login/login.component';
+import { PageNotFoundComponent } from './components/shared/page-not-found/page-not-found.component';
+import { AboutComponent } from './components/public/about/about.component';
+import { ContactComponent } from './components/public/contact/contact.component';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
+import { TodosComponent } from './components/sample/todos/todos.component';
+import { TodoItemComponent } from './components/sample/todo-item/todo-item.component';
+import { HowItWorksComponent } from './components/public/how-it-works/how-it-works.component';
+import { QuoteComponent } from './components/public/quote/quote.component';
+import { ReportComponent } from './components/shared/report/report.component';
+import { HelpComponent } from './components/public/help/help.component';
+import { TestimonialsComponent } from './components/public/testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    ClientLoginComponent,
+    ClientRegisterComponent,
+    AdminDashboardComponent,
+    AdminLoginComponent,
     PageNotFoundComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    NavbarComponent,
+    FooterComponent,
+    TodosComponent,
+    TodoItemComponent,
+    HowItWorksComponent,
+    QuoteComponent,
+    ReportComponent,
+    HelpComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    )
+    HttpClientModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

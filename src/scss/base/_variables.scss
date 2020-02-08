@@ -1,0 +1,22 @@
+$bg-color: #eee;
+$color: #333;
+
+$primary-color: #012340;
+$text-color: #e2e8f0;
+
+$text-color--secondary: #747b84;
+$text-color--lighten: lighten($text-color, 50%);
+
+// https://tailwindcss.com/docs/responsive-design/#app
+
+$screen-sm:                  640px;
+$screen-sm-min:              $screen-sm;
+
+$screen-md:                  768px;
+$screen-md-min:              $screen-md;
+
+$screen-lg:                  1024px;
+$screen-lg-min:              $screen-lg;
+
+$screen-xl:                  1280px;
+$screen-xl-min:              $screen-xl;;

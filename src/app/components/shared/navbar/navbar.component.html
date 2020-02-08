@@ -1,0 +1,16 @@
+<nav class="navbar">
+  <a [routerLink]="['/']" class="title">{{ title }}</a>
+  <div class="navbar__links">
+    <div class="navbar___left">
+      <a [routerLink]="['about']">About</a>
+      <a [routerLink]="['how-it-works']">How it works</a>
+      <a [routerLink]="['testimonials']">Testimonials</a>
+      <a [routerLink]="['quote']">Get a Quote</a>
+    </div>
+    <div class="navbar__right">
+      <a [routerLink]="['report']">Submit a Report</a>
+      <a [routerLink]="['help']">Help</a>
+      <a [routerLink]="['login']">Login</a>
+    </div>
+  </div>
+</nav>
