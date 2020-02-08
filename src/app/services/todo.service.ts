@@ -14,21 +14,21 @@ const httpOptions = {
 })
 
 export class TodoService {
-  todosUrl:string = 'https://jsonplaceholder.typicode.com/todos';
+  todosUrl = 'https://jsonplaceholder.typicode.com/todos';
 
   constructor(private http: HttpClient) { }
 
-  getTodos():Observable<Todo[]> {
-    return this.http.get<Todo[]>(this.todosUrl)
+  getTodos(): Observable<Todo[]> {
+    return this.http.get<Todo[]>(this.todosUrl);
   }
 
-  toggleCompleted(todo: Todo):Observable<any> {
+  toggleCompleted(todo: Todo): Observable<any> {
     const url = `${this.todosUrl}/${todo.id}`;
 
-    return this.http.put(url, todo, httpOptions)
+    return this.http.put(url, todo, httpOptions);
   }
 
-  deleteTodo(todo: Todo):Observable<any> {
+  deleteTodo(todo: Todo): Observable<any> {
     const url = `${this.todosUrl}/${todo.id}`;
 
     return this.http.delete(url, httpOptions);

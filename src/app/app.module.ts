@@ -1,7 +1,7 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-import { RouterModule, Routes } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/public/home/home.component';
@@ -16,17 +16,6 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { TodosComponent } from './components/sample/todos/todos.component';
 import { TodoItemComponent } from './components/sample/todo-item/todo-item.component';
-
-const appRoutes: Routes = [
-  { path: 'register', component: ClientLoginComponent },
-  { path: 'login', component: ClientRegisterComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'admin', component: AdminDashboardComponent },
-  { path: 'admin/login', component: AdminLoginComponent },
-  { path: '', component: HomeComponent },
-  { path: '**', component: PageNotFoundComponent }
-];
 
 @NgModule({
   declarations: [
@@ -47,10 +36,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    ),
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
