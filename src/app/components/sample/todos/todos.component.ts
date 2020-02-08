@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Todo } from 'app/models/todo';
+import Todo from 'app/models/todo-fix';
 import { TodoService } from 'app/services/todo.service';
 
 @Component({

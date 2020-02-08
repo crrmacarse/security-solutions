@@ -1,4 +1,4 @@
-export class Todo {
+export default class Todo {
   id: number;
   title: string;
   description?: string;
