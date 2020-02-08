@@ -1,22 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { HttpClientModule } from '@angular/common/http';
 
-import { TodosComponent } from './todos.component';
+import { HowItWorksComponent } from './how-it-works.component';
 
-describe('TodosComponent', () => {
-  let component: TodosComponent;
-  let fixture: ComponentFixture<TodosComponent>;
+describe('HowItWorksComponent', () => {
+  let component: HowItWorksComponent;
+  let fixture: ComponentFixture<HowItWorksComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientModule],
-      declarations: [ TodosComponent ]
+      declarations: [ HowItWorksComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TodosComponent);
+    fixture = TestBed.createComponent(HowItWorksComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

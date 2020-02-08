@@ -16,6 +16,11 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { TodosComponent } from './components/sample/todos/todos.component';
 import { TodoItemComponent } from './components/sample/todo-item/todo-item.component';
+import { HowItWorksComponent } from './components/public/how-it-works/how-it-works.component';
+import { QuoteComponent } from './components/public/quote/quote.component';
+import { ReportComponent } from './components/shared/report/report.component';
+import { HelpComponent } from './components/public/help/help.component';
+import { TestimonialsComponent } from './components/public/testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +36,12 @@ import { TodoItemComponent } from './components/sample/todo-item/todo-item.compo
     NavbarComponent,
     FooterComponent,
     TodosComponent,
-    TodoItemComponent
+    TodoItemComponent,
+    HowItWorksComponent,
+    QuoteComponent,
+    ReportComponent,
+    HelpComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,

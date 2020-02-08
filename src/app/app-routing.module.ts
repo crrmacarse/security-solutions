@@ -10,6 +10,11 @@ import { LoginComponent as AdminLoginComponent } from './components/admin/auth/l
 import { PageNotFoundComponent } from './components/shared/page-not-found/page-not-found.component';
 import { AboutComponent } from './components/public/about/about.component';
 import { ContactComponent } from './components/public/contact/contact.component';
+import { HowItWorksComponent } from './components/public/how-it-works/how-it-works.component';
+import { QuoteComponent } from './components/public/quote/quote.component';
+import { TestimonialsComponent } from './components/public/testimonials/testimonials.component';
+import { ReportComponent } from './components/shared/report/report.component';
+import { HelpComponent } from './components/public/help/help.component';
 import { TodosComponent } from './components/sample/todos/todos.component';
 
 const adminRoutes: Routes = [
@@ -18,8 +23,8 @@ const adminRoutes: Routes = [
 ];
 
 const clientRoutes: Routes = [
-  { path: ROUTES.CLIENT_REGISTER, component: ClientLoginComponent },
-  { path: ROUTES.CLIENT_LOGIN, component: ClientRegisterComponent },
+  { path: ROUTES.CLIENT_LOGIN, component: ClientLoginComponent },
+  { path: ROUTES.CLIENT_REGISTER, component: ClientRegisterComponent },
 ];
 
 const appRoutes: Routes = [
@@ -27,6 +32,11 @@ const appRoutes: Routes = [
   ...clientRoutes,
   { path: ROUTES.ABOUT, component: AboutComponent },
   { path: ROUTES.CONTACT, component: ContactComponent },
+  { path: ROUTES.HOW_IT_WORKS, component: HowItWorksComponent },
+  { path: ROUTES.QUOTE, component: QuoteComponent },
+  { path: ROUTES.TESTIMONIALS, component: TestimonialsComponent },
+  { path: ROUTES.REPORT, component: ReportComponent },
+  { path: ROUTES.HELP, component: HelpComponent },
   { path: ROUTES.TODOS, component: TodosComponent },
   { path: ROUTES.HOME, component: HomeComponent },
   { path: '**', component: PageNotFoundComponent }
@@ -34,10 +44,7 @@ const appRoutes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    ),
+    RouterModule.forRoot(appRoutes),
   ],
   exports: [RouterModule],
 })

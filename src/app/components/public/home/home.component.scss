@@ -1,0 +1,63 @@
+@import "~scss/base/variables";
+
+.home {
+
+  .home__carousel {
+    height: 50vh;
+  }
+
+  .home__hero {
+    height: 30vh;
+    background: #a6b6bf;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .home__hero__content {
+    position: absolute;
+    display: flex;
+    margin: 3rem 0;
+
+    img {
+      @media (max-width: $screen-lg) {
+        display: none;
+      }
+    }
+
+    .home__hero__content__description {
+      margin-left: 5rem;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .home__information {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .home__testimonials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .home__contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15rem 0;
+  }
+}

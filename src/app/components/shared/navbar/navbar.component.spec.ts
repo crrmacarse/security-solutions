@@ -22,4 +22,13 @@ describe('NavbarComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should have as title 'Security Solutions Company'`, () => {
+    expect(component.title).toEqual('Security Solutions Company');
+  });
+
+  it('should render title', () => {
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('.title').textContent).toContain('Security Solutions Company');
+  });
 });

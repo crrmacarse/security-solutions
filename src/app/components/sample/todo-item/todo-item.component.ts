@@ -32,4 +32,5 @@ export class TodoItemComponent implements OnInit {
     todo: true,
     'is-completed': this.todo.completed,
   })
+
 }
